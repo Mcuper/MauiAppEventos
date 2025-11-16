@@ -25,7 +25,7 @@
             <Label Text="{Binding DataTermino, StringFormat='Data de Término: {0:dd/MM/yyyy}'}"
                    TextColor = "White"/>
 
-            <Label Text="{Binding DuracaoDias, StringFormat='Duração: {0} dia(s)'}" 
+            <Label Text="{Binding DuraçãoDias, StringFormat='Duração: {0} dia(s)'}" 
                    TextColor = "White"/>
             <Label Text="{Binding NumeroParticipantes, StringFormat='Participantes: {0}'}"
                    TextColor = "White"/>
