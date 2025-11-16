@@ -5,48 +5,79 @@
     x:Class="MauiAppEventos.CadastroEventoPage"
     xmlns:sys="clr-namespace:System;assembly=System.Runtime"
     Title="Cadastro de Evento"
-        BackgroundColor="Black">
+    BackgroundColor="#121212">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="10">
+        <VerticalStackLayout Padding="20" Spacing="15">
 
-            <Label Text="Cadastro de Evento" 
-                TextColor = "White"
-                FontSize="30"/>
+            <!-- Título -->
+            <Label Text="Cadastro de Evento"
+                   TextColor="White"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
 
-            <Label Text="Nome do evento:" 
-                   TextColor = "White"/>
-            <Entry Text="{Binding Nome}" Placeholder="Digite o nome do evento"
-                   TextColor = "Gray"/>
-            
+            <Label Text="Nome do evento:" TextColor="White" />
+            <Entry Text="{Binding Nome}"
+                   Placeholder="Insira o nome do evento"
+                   TextColor="White"
+                   PlaceholderColor="#AAAAAA"
+                   BackgroundColor="#1E1E1E"
+                   Margin="0,0,0,10" />
 
-            <Label Text="Data de início:" 
-                   TextColor = "White"/>
-            <DatePicker Date="{Binding DataInicio}"
-                        MinimumDate="{x:Static sys:DateTime.Now}"
-                        TextColor = "White"/>
+            <!-- Datas alinhadas -->
+            <HorizontalStackLayout Spacing="20">
+                <VerticalStackLayout>
+                    <Label Text="Data de início:" TextColor="White" />
+                    <DatePicker Date="{Binding DataInicio}"
+                                MinimumDate="{x:Static sys:DateTime.Now}"
+                                TextColor="White"
+                                BackgroundColor="#1E1E1E" />
+                </VerticalStackLayout>
 
-            <Label Text="Data de término:" />
-            <DatePicker Date="{Binding DataTermino}"
-                        TextColor = "White"/>
+                <VerticalStackLayout>
+                    <Label Text="Data de término:" TextColor="White" />
+                    <DatePicker Date="{Binding DataTermino}"
+                                TextColor="White"
+                                BackgroundColor="#1E1E1E" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
 
-            <Label Text="Número de participantes:"
-                   TextColor = "White"/>
-            <Entry Text="{Binding NumeroParticipantes}" Keyboard="Numeric"
-                   TextColor = "White"/>
+            <!-- Número de participantes -->
+            <Label Text="Número de participantes:" TextColor="White" />
+            <Entry Text="{Binding NumeroParticipantes}"
+                   Keyboard="Numeric"
+                   TextColor="White"
+                   Placeholder="Ex.: 50"
+                   PlaceholderColor="#AAAAAA"
+                   BackgroundColor="#1E1E1E" />
 
-            <Label Text="Local do evento:"
-                   TextColor = "White"/>
+            <!-- Local -->
+            <Label Text="Local do evento:" TextColor="White" />
             <Entry Text="{Binding Local}"
-                   TextColor = "White"/>
+                   TextColor="White"
+                   Placeholder="Ex.: Auditório Central"
+                   PlaceholderColor="#AAAAAA"
+                   BackgroundColor="#1E1E1E" />
 
-            <Label Text="Custo por participante:" 
-                   TextColor = "White"/>
-            <Entry Text="{Binding CustoPorParticipante}" Keyboard="Numeric"
-                   TextColor = "White"/>
+            <!-- Custo -->
+            <Label Text="Custo por participante:" TextColor="White" />
+            <Entry Text="{Binding CustoPorParticipante}"
+                   Keyboard="Numeric"
+                   TextColor="White"
+                   Placeholder="Ex.: 100,00"
+                   PlaceholderColor="#AAAAAA"
+                   BackgroundColor="#1E1E1E" />
 
-            <Button Text="Cadastrar Evento" Clicked="OnCadastrarEventoClicked"
-                    TextColor = "White"/>
+            <!-- Botão estilizado -->
+            <Button Text="Cadastrar Evento"
+                    Clicked="OnCadastrarEventoClicked"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    Margin="0,20,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>
