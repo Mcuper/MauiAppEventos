@@ -8,13 +8,13 @@
 
     <Color x:Key="Primary">#512BD4</Color>
     <Color x:Key="PrimaryDark">#D600AA</Color>
-    <Color x:Key="PrimaryDarkText">white</Color>
+    <Color x:Key="PrimaryDarkText">black</Color>
     <Color x:Key="Secondary">black</Color>
     <Color x:Key="SecondaryDarkText">#D600AA</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>
 
     <Color x:Key="White">White</Color>
-    <Color x:Key="Black">Black</Color>
+    <Color x:Key="Black">white</Color>
     <Color x:Key="Magenta">#D600AA</Color>
     <Color x:Key="MidnightBlue">#190649</Color>
     <Color x:Key="OffBlack">white</Color>

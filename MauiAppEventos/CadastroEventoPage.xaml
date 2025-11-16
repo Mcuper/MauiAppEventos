@@ -9,26 +9,43 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
 
-            <Label Text="Nome do evento:" />
-            <Entry Text="{Binding Nome}" Placeholder="Digite o nome do evento" />
+            <Label Text="Cadastro de Evento" 
+                TextColor = "White"
+                FontSize="30"/>
 
-            <Label Text="Data de início:" />
+            <Label Text="Nome do evento:" 
+                   TextColor = "White"/>
+            <Entry Text="{Binding Nome}" Placeholder="Digite o nome do evento"
+                   TextColor = "Gray"/>
+            
+
+            <Label Text="Data de início:" 
+                   TextColor = "White"/>
             <DatePicker Date="{Binding DataInicio}"
-                        MinimumDate="{x:Static sys:DateTime.Now}"/>
+                        MinimumDate="{x:Static sys:DateTime.Now}"
+                        TextColor = "White"/>
 
             <Label Text="Data de término:" />
-            <DatePicker Date="{Binding DataTermino}"/>
+            <DatePicker Date="{Binding DataTermino}"
+                        TextColor = "White"/>
 
-            <Label Text="Número de participantes:" />
-            <Entry Text="{Binding NumeroParticipantes}" Keyboard="Numeric" />
+            <Label Text="Número de participantes:"
+                   TextColor = "White"/>
+            <Entry Text="{Binding NumeroParticipantes}" Keyboard="Numeric"
+                   TextColor = "White"/>
 
-            <Label Text="Local do evento:" />
-            <Entry Text="{Binding Local}" />
+            <Label Text="Local do evento:"
+                   TextColor = "White"/>
+            <Entry Text="{Binding Local}"
+                   TextColor = "White"/>
 
-            <Label Text="Custo por participante:" />
-            <Entry Text="{Binding CustoPorParticipante}" Keyboard="Numeric" />
+            <Label Text="Custo por participante:" 
+                   TextColor = "White"/>
+            <Entry Text="{Binding CustoPorParticipante}" Keyboard="Numeric"
+                   TextColor = "White"/>
 
-            <Button Text="Cadastrar Evento" Clicked="OnCadastrarEventoClicked" />
+            <Button Text="Cadastrar Evento" Clicked="OnCadastrarEventoClicked"
+                    TextColor = "White"/>
 
         </VerticalStackLayout>
     </ScrollView>
